@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'resume/index'
   #resources :gets, :posts
   resources :users
   resources :articles

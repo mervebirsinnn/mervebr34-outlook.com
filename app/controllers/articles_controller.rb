@@ -28,7 +28,7 @@
   # POST /articles.json
   def create
     @article = Article.new(article_params)#(params.[:article]'a permit icin fonks. kullanıldı)
-
+    @article.usr = Usr.first
     respond_to do |format|
       if @article.save
         flash[:notice] =  "Article was created successfully."
